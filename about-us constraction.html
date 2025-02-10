@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>About Us - Construction Company</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/> <!-- AOS Library -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .menu-hidden {
+      display: none;
+    }
+    .bg-transparent {
+      background-color: transparent;
+    }
+    .bg-colored {
+      background-color: #1a202cd6; /* Tailwind's bg-gray-900 */
+    }
+    .bg-colored .text-black {
+      color: #fff;
+    }
+    .image-center {
+      display: flex;
+      justify-content: center;
+    }
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+    .hover-shadow:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header / Hero Section -->
+  <header class="text-white sticky top-0 z-50 transition-all duration-300 bg-transparent" id="header">
+    <div class="relative z-10 flex items-center justify-between p-6">
+      <img alt="Company logo" class="h-12 hover-scale" height="50" src="https://storage.googleapis.com/a1aa/image/5Ae8q-8VJX60l3I83EtJRIRs9Yi0sFClteq90YZOeFM.jpg" width="150"/>
+      <button class="block md:hidden focus:outline-none" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="hidden text-black md:block">
+        <ul class="flex space-x-6">
+          <li><a class="hover:text-orange-500 transition-colors" href="#">Home</a></li>
+          <li><a class="hover:text-orange-500 transition-colors" href="#">About Us</a></li>
+          <li><a class="hover:text-orange-500 transition-colors" href="#">Services</a></li>
+          <li><a class="hover:text-orange-500 transition-colors" href="#">Projects</a></li>
+          <li><a class="hover:text-orange-500 transition-colors" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="menu-hidden md:hidden bg-gray-800" id="mobile-menu">
+      <ul class="flex flex-col space-y-4 p-6">
+        <li><a class="hover:text-orange-500 transition-colors" href="#">Home</a></li>
+        <li><a class="hover:text-orange-500 transition-colors" href="#">About Us</a></li>
+        <li><a class="hover:text-orange-500 transition-colors" href="#">Services</a></li>
+        <li><a class="hover:text-orange-500 transition-colors" href="#">Projects</a></li>
+        <li><a class="hover:text-orange-500 transition-colors" href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="relative z-10 flex flex-col items-center justify-center h-screen text-center mt-[-95px]">
+    <img alt="Construction site with cranes and workers in action" class="absolute inset-0 w-full h-full object-cover" height="1080" src="https://storage.googleapis.com/a1aa/image/rB6mZRvnjavp3UqyREcAll9RDiSjtIzO2wgIdVJYniQ.jpg" width="1920"/>
+    <div class="absolute inset-0 w-full h-full bg-[#1f293757]"></div>
+    <div class="z-50" data-aos="fade-up">
+      <h3 class="text-2xl md:text-2xl pb-16 font-bold">Page: &nbsp; About Us <hr class="border-b-4 w-44 m-auto"></h3>
+      <h1 class="text-4xl md:text-6xl font-bold mb-16">Innovating the Future of Construction</h1>
+      <a class="mt-6 px-8 py-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors hover-scale" href="#">See Our Work</a>
+    </div>
+  </div>
+
+  <!-- Introduction / Company Story -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 md:flex md:items-center">
+      <div class="md:w-1/2 image-center" data-aos="fade-right">
+        <img alt="Founders of the company at a construction site" class="w-1/2 rounded-lg shadow-lg hover-scale" height="400" src="https://storage.googleapis.com/a1aa/image/VtYur7L-b2alhVQJ1yqfymW4mN7YMspCCfZm-0_sNHU.jpg" width="600"/>
+      </div>
+      <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0" data-aos="fade-left">
+        <h2 class="text-3xl font-bold">Our Story</h2>
+        <p class="mt-4 text-lg">Founded in 2005, our mission has always been to create exceptional construction experiences by focusing on quality and safety. We believe in building not just structures, but lasting relationships with our clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values & Mission Section -->
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold" data-aos="fade-up">Our Values</h2>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="zoom-in">
+          <i class="fas fa-hard-hat text-4xl text-orange-500"></i>
+          <h3 class="mt-4 text-xl font-semibold">Safety</h3>
+          <p class="mt-2">We prioritize the safety of our workers and clients in every project we undertake.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-cogs text-4xl text-orange-500"></i>
+          <h3 class="mt-4 text-xl font-semibold">Innovation</h3>
+          <p class="mt-2">We embrace innovative solutions to deliver the best results for our clients.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-leaf text-4xl text-orange-500"></i>
+          <h3 class="mt-4 text-xl font-semibold">Sustainability</h3>
+          <p class="mt-2">We are committed to sustainable practices that protect our environment.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fas fa-handshake text-4xl text-orange-500"></i>
+          <h3 class="mt-4 text-xl font-semibold">Integrity</h3>
+          <p class="mt-2">We conduct our business with the highest level of integrity and transparency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold" data-aos="fade-up">Meet Our Team</h2>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="fade-up">
+          <img alt="Profile image of John Doe, CEO" class="w-32 h-32 mx-auto rounded-full hover-scale" height="200" src="https://storage.googleapis.com/a1aa/image/kMSx-1BZhxQJgl6O1Zi9x0eKhwhAZPmc0uoaji6Dsl8.jpg" width="200"/>
+          <h3 class="mt-4 text-xl font-semibold">John Doe</h3>
+          <p class="text-gray-600">CEO</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="fade-up" data-aos-delay="100">
+          <img alt="Profile image of Jane Smith, Project Manager" class="w-32 h-32 mx-auto rounded-full hover-scale" height="200" src="https://storage.googleapis.com/a1aa/image/_5C6q_f9pPYG8PhwU88BZK4iscsF0FgYfZoq3oFS5QY.jpg" width="200"/>
+          <h3 class="mt-4 text-xl font-semibold">Jane Smith</h3>
+          <p class="text-gray-600">Project Manager</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="fade-up" data-aos-delay="200">
+          <img alt="Profile image of Mike Johnson, Lead Engineer" class="w-32 h-32 mx-auto rounded-full hover-scale" height="200" src="https://storage.googleapis.com/a1aa/image/yQm055Y_mYpEt2s1GldWK-Qlz2Hw8SN5uQGhEB8YQmU.jpg" width="200"/>
+          <h3 class="mt-4 text-xl font-semibold">Mike Johnson</h3>
+          <p class="text-gray-600">Lead Engineer</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="fade-up" data-aos-delay="300">
+          <img alt="Profile image of Emily Davis, Architect" class="w-32 h-32 mx-auto rounded-full hover-scale" height="200" src="https://storage.googleapis.com/a1aa/image/EN2KLAONMLGOV28c0BjyNZDMcXXjuNbL6BlQMLtB0RM.jpg" width="200"/>
+          <h3 class="mt-4 text-xl font-semibold">Emily Davis</h3>
+          <p class="text-gray-600">Architect</p>
+        </div>
+      </div>
+      <a class="mt-8 inline-block px-8 py-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors hover-scale" href="#" data-aos="fade-up">Meet the Full Team</a>
+    </div>
+  </section>
+
+  <!-- Projects Section / Portfolio -->
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold" data-aos="fade-up">Our Projects</h2>
+      <div class="mt-12">
+        <div class="relative">
+          <div class="flex overflow-x-scroll hide-scroll-bar">
+            <div class="flex flex-wrap md:flex-nowrap gap-10 space-x-6">
+              <div class="inline-block p-6 bg-white rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="fade-right">
+                <img alt="Completed high-rise building in urban location" class="w-full rounded-lg hover-scale" height="400" src="https://storage.googleapis.com/a1aa/image/JBygMA3fq2wZkPMP6MhJN_7wI7KO-iJFtC9ISYt0ynw.jpg" width="600"/>
+                <h3 class="mt-4 text-xl font-semibold">High-Rise Building</h3>
+                <p class="mt-2">Completed in 2022, this high-rise building took 18 months to finish, delivering sustainable housing in a prime urban location.</p>
+              </div>
+              <div class="inline-block p-6 bg-white rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="fade-up">
+                <img alt="Modern office space with glass facade" class="w-full rounded-lg hover-scale" height="400" src="https://storage.googleapis.com/a1aa/image/-sw7ElIs_BMyMVFT8bAvMd7ep9lMQs_snxInZcxz-Bc.jpg" width="600"/>
+                <h3 class="mt-4 text-xl font-semibold">Office Space</h3>
+                <p class="mt-2">This modern office space, completed in 2021, features a sleek glass facade and state-of-the-art facilities.</p>
+              </div>
+              <div class="inline-block p-6 bg-white rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="fade-left">
+                <img alt="Residential complex with green spaces" class="w-full rounded-lg hover-scale" height="400" src="https://storage.googleapis.com/a1aa/image/HCY1TWrsJfXVe4vlZWn5-Jo0ISn5AOgskKURbKrHu6w.jpg" width="600"/>
+                <h3 class="mt-4 text-xl font-semibold">Residential Complex</h3>
+                <p class="mt-2">Our residential complex, completed in 2020, offers comfortable living with ample green spaces and amenities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="mt-8 inline-block px-8 py-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors hover-scale" href="#" data-aos="fade-up">See More Projects</a>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold" data-aos="fade-up">What Our Clients Say</h2>
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="fade-up">
+          <img alt="Client photo" class="w-16 h-16 mx-auto rounded-full hover-scale" height="100" src="https://storage.googleapis.com/a1aa/image/pbeYE6TnZhJIzFMMS2owwGpRNV7HOL4eIlOLvtoWe28.jpg" width="100"/>
+          <p class="mt-4 text-lg">“Working with [Your Company Name] was a seamless experience. Their professionalism and attention to detail were exceptional.”</p>
+          <div class="flex justify-center mt-2">
+            <i class="fas fa-star text-orange-500"></i>
+            <i class="fas fa-star text-orange-500"></i>
+            <i class="fas fa-star text-orange-500"></i>
+            <i class="fas fa-star text-orange-500"></i>
+            <i class="fas fa-star text-orange-500"></i>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold">Client Name</h3>
+          <p class="text-gray-600">CEO, Client Company</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="fade-up" data-aos-delay="100">
+          <img alt="Client photo" class="w-16 h-16 mx-auto rounded-full hover-scale" height="100" src="https://storage.googleapis.com/a1aa/image/pbeYE6TnZhJIzFMMS2owwGpRNV7HOL4eIlOLvtoWe28.jpg" width="100"/>
+          <p class="mt-4 text-lg">“The team at [Your Company Name] delivered our project on time and exceeded our expectations in every way.”</p>
+          <div class="flex justify-center mt-2">
+            <i class="fas fa-star text-orange-500"></i>
+            <i class="fas fa-star text-orange-500"></i>
+            <i class="fas fa-star text-orange-500"></i>
+            <i class="fas fa-star text-orange-500"></i>
+            <i class="fas fa-star text-orange-500"></i>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold">Client Name</h3>
+          <p class="text-gray-600">Project Manager, Client Company</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow-lg hover-shadow transition-shadow" data-aos="fade-up" data-aos-delay="200">
+          <img alt="Client photo" class="w-16 h-16 mx-auto rounded-full hover-scale" height="100" src="https://storage.googleapis.com/a1aa/image/pbeYE6TnZhJIzFMMS2owwGpRNV7HOL4eIlOLvtoWe28.jpg" width="100"/>
+          <p class="mt-4 text-lg">“I highly recommend [Your Company Name] for any construction needs. Their expertise and dedication are unmatched.”</p>
+          <div class="flex justify-center mt-2">
+            <i class="fas fa-star text-orange-500"></i>
+            <i class="fas fa-star text-orange-500"></i>
+            <i class="fas fa-star text-orange-500"></i>
+            <i class="fas fa-star text-orange-500"></i>
+            <i class="fas fa-star text-orange-500"></i>
+          </div>
+          <h3 class="mt-4 text-xl font-semibold">Client Name</h3>
+          <p class="text-gray-600">Director, Client Company</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA Section -->
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row items-center justify-between">
+        <div class="w-full lg:w-1/2 text-center lg:text-left" data-aos="fade-right">
+          <h2 class="text-3xl font-bold">Get In Touch</h2>
+          <form class="mt-8 max-w-lg mx-auto lg:mx-0">
+            <div class="mb-4">
+              <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Name" type="text"/>
+            </div>
+            <div class="mb-4">
+              <input class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Email" type="email"/>
+            </div>
+            <div class="mb-4">
+              <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" placeholder="Message"></textarea>
+            </div>
+            <button class="px-8 py-3 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition-colors hover-scale" type="submit">Send Message</button>
+          </form>
+          <div class="mt-8 flex justify-center lg:justify-start space-x-4">
+            <a class="text-gray-600 hover:text-orange-500 transition-colors" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a class="text-gray-600 hover:text-orange-500 transition-colors" href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a class="text-gray-600 hover:text-orange-500 transition-colors" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a class="text-gray-600 hover:text-orange-500 transition-colors" href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center" data-aos="fade-left">
+          <iframe allowfullscreen="" height="450" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086857680634!2d144.9630579153169!3d-37.81410797975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d1b1f1b1f1b1!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1613962622000!5m2!1sen!2sau" style="border:0;" width="600"></iframe>
+        </div>
+      </div>
+      <div class="container mx-auto px-16 py-8 mt-8 flex bg-gray-600 flex-col lg:flex-row items-center justify-between space-y-4 lg:space-y-0">
+        <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-md hover-shadow transition-shadow" data-aos="fade-up">
+          <i class="fas fa-phone-alt text-orange-500"></i>
+          <span class="text-gray-600">+1 234 567 890</span>
+        </div>
+        <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-md hover-shadow transition-shadow" data-aos="fade-up" data-aos-delay="100">
+          <i class="fas fa-envelope text-orange-500"></i>
+          <span class="text-gray-600">info@example.com</span>
+        </div>
+        <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-md hover-shadow transition-shadow" data-aos="fade-up" data-aos-delay="200">
+          <i class="fas fa-map-marker-alt text-orange-500"></i>
+          <span class="text-gray-600">123 Main Street, Anytown, USA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="py-8 bg-gray-900 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <img alt="Company logo" class="mx-auto mb-4 hover-scale" height="50" src="https://storage.googleapis.com/a1aa/image/5Ae8q-8VJX60l3I83EtJRIRs9Yi0sFClteq90YZOeFM.jpg" width="150"/>
+      <ul class="flex flex-wrap gap-5 justify-center space-x-6 mb-4">
+        <li><a class="hover:text-orange-500 transition-colors" href="#">Home</a></li>
+        <li><a class="hover:text-orange-500 transition-colors" href="#">Services</a></li>
+        <li><a class="hover:text-orange-500 transition-colors" href="#">Projects</a></li>
+        <li><a class="hover:text-orange-500 transition-colors" href="#">Careers</a></li>
+        <li><a class="hover:text-orange-500 transition-colors" href="#">Privacy Policy</a></li>
+      </ul>
+      <p>© 2023 Construction Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS Library -->
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('mobile-menu');
+      if (menu.classList.contains('menu-hidden')) {
+        menu.classList.remove('menu-hidden');
+      } else {
+        menu.classList.add('menu-hidden');
+      }
+    });
+
+    window.addEventListener('scroll', function() {
+      var header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.remove('bg-transparent');
+        header.classList.add('bg-colored');
+      } else {
+        header.classList.remove('bg-colored');
+        header.classList.add('bg-transparent');
+      }
+    });
+  </script>
+</body>
+</html>
